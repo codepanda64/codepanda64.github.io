@@ -62,18 +62,18 @@
 <p>32位下载  <a href="http://repo.msys2.org/distrib/i686/msys2-i686-20150916.exe">msys2-i686-20150916.exe</a>,64位下载 <a href="http://repo.msys2.org/distrib/x86_64/msys2-x86_64-20150916.exe">msys2-x86_64-20150916.exe</a></p>
 <h3>2、安装MSYS2</h3>
 <p>下载后得到exe文件双击进入安装向导</p>
-<p><img alt="安装向导" src="http://upload-images.jianshu.io/upload_images/1633979-b990140748d717c2.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
+<p><img alt="安装向导" src="http://i4.buimg.com/f068ce37b561f1ad.png" />
 选择安装路径</p>
-<p><img alt="选择安装目录" src="http://upload-images.jianshu.io/upload_images/1633979-c24ec5ab39065821.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
+<p><img alt="选择安装目录" src="http://i4.buimg.com/1315ce116029c244.png" />
 接着基本下一步、下一步就完成了</p>
-<p><img alt="正在安装ing" src="http://upload-images.jianshu.io/upload_images/1633979-2ca63e92c5a8fa8b.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
-<img alt="安装完成" src="http://upload-images.jianshu.io/upload_images/1633979-7772ae6ec2d0ba55.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
-<img alt="退出安装向导" src="http://upload-images.jianshu.io/upload_images/1633979-057b429857388bc9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
+<p><img alt="正在安装ing" src="http://i4.buimg.com/b5b288e399dc781a.png" />
+<img alt="安装完成" src="http://i4.buimg.com/a0c4285479991756.png" />
+<img alt="退出安装向导" src="http://i4.buimg.com/470dc71b71e3abd4.png" />
 安装好了之后会在菜单栏生产三个命令行工具快捷方式，其中<strong>MSYS2 Shell</strong>是MSYS2系统管理的命令行工具，<strong>MinGW-w64 Win32 Shell</strong>和<strong>MinGW-w64 Win64 Shell</strong>分别是32位和64位下的<strong>MinGW</strong></p>
-<p><img alt="开始菜单栏添加的快捷方式" src="http://upload-images.jianshu.io/upload_images/1633979-1a91be943baee686.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
+<p><img alt="开始菜单栏添加的快捷方式" src="http://i2.buimg.com/9d79337a8742e5da.png" /></p>
 <h3>3、更新MSYS2系统环境</h3>
 <p>运行<code>msys2_shell.bat</code>会出现类似linux的bash界面，如果熟悉的肯定不会陌生。
-<img alt="msys2 shell运行界面" src="http://upload-images.jianshu.io/upload_images/1633979-13fc65181fb7c039.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
+<img alt="msys2 shell运行界面" src="http://i2.buimg.com/f48e2b59579ef37f.png" /></p>
 <p><code>mysys2</code>使用<code>pacman</code>包管理系统，用过<a href="https://www.archlinux.org/"><em>Arch</em> <em>Linux</em></a>对他肯定不会陌生。</p>
 <p>首先更新软件数据库</p>
 <div class="highlight"><pre><span></span>pacman --needed -Sy bash pacman pacman-mirrors msys2-runtime
@@ -85,30 +85,30 @@
 </pre></div>
 
 
-<p><img alt="更新系统" src="http://upload-images.jianshu.io/upload_images/1633979-b180d857a59ef7c4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
+<p><img alt="更新系统" src="http://i2.buimg.com/f3828a44597427bc.png" /></p>
 <h3>4、 安装基本开发环境和常用工具</h3>
 <div class="highlight"><pre><span></span>pacman -S  base-devel  git  mercurial  cvs  wget  p7zip  perl  ruby  python2
 </pre></div>
 
 
-<p><img alt="安装常用工具" src="http://upload-images.jianshu.io/upload_images/1633979-850ff8149fc15209.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
+<p><img alt="安装常用工具" src="http://i2.buimg.com/8168e0dd4b45033e.png" /></p>
 <h3>5、安装 MinGW-w64</h3>
 <p><strong>安装32位</strong></p>
 <div class="highlight"><pre><span></span>pacman -S  mingw-w64-i686-toolchain
 </pre></div>
 
 
-<p><img alt="安装mingw-w64-i686-toolchain" src="http://upload-images.jianshu.io/upload_images/1633979-d20fc23478d78e13.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" />
+<p><img alt="安装mingw-w64-i686-toolchain" src="http://i2.buimg.com/2e9f5b73daf188cc.png" />
 <strong>安装64位</strong></p>
 <div class="highlight"><pre><span></span>pacman -S  mingw-w64-x86_64-toolchain
 </pre></div>
 
 
-<p><img alt="安装mingw-w64-x86_64-toolchain" src="http://upload-images.jianshu.io/upload_images/1633979-604ff839ad2cfc06.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
+<p><img alt="安装mingw-w64-x86_64-toolchain" src="http://i2.buimg.com/20a27c56eb3d94b9.png" /></p>
 <h3>6、 安装Qt5</h3>
 <p><strong>安装32位Qt5和Qt Creator</strong>
 <strong>安装64位Qt5和Qt Creator</strong>
-<img alt="安装64位Qt5和Qt Creator" src="http://upload-images.jianshu.io/upload_images/1633979-bf393468bd3b170f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" /></p>
+<img alt="安装64位Qt5和Qt Creator" src="http://i2.buimg.com/fc2fdeddd305f26c.png" /></p>
             <aside>
             <hr/>
             <nav>
